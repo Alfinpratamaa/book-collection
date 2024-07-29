@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.collectionbook.MainActivity">
+    <item
+        android:id="@+id/home"
+        android:title="home"
+        android:contentDescription="nav to home fragment"
+        android:icon="@drawable/home_white"
+        />
+    <item
+        android:id="@+id/list_book"
+        android:title="list book"
+        android:contentDescription="nav to list fragment"
+        android:icon="@drawable/search_list_white"
+        />
+    <item
+        android:id="@+id/fabItem"
+        android:contentDescription="nav to add activitiy"
+        android:title=""
+        android:enabled="false"
+        />
+    <item
+        android:id="@+id/bookmark"
+        android:contentDescription="nav to bookmarm fragment"
+        android:title="bookmark"
+        android:icon="@drawable/bookmark_white"
+         />
+    <item
+        android:id="@+id/profile"
+        android:contentDescription="nav to profile fragment"
+        android:title="profile"
+        android:icon="@drawable/person_white"
+        />
+</menu>

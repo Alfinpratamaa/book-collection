@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CollectionBook" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.CollectionBook" parent="Base.Theme.CollectionBook" />
+
+
+    <!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">-->
+    <!--        &lt;!&ndash; Customize your theme here &ndash;&gt;-->
+    <!--        <item name="colorPrimary">@color/dark_blue</item>-->
+
+    <!--        <item name="bottomNavigationStyle">@style/BottomNavigationView</item>-->
+    <!--    </style>-->
+
+    <!--    <style name="BottomNavigationView" parent="Theme.CollectionBook">-->
+    <!--        <item name="itemIconTint">@color/nav_item_state_color_list</item>-->
+    <!--        <item name="itemTextColor">@color/nav_item_state_color_list</item>-->
+    <!--    </style>-->
+</resources>

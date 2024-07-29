@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/primary"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="15dp">
+        <RelativeLayout
+            android:id="@+id/pdfRl"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/primary">
+
+            <ImageView
+                android:id="@+id/coverImage"
+                android:scaleType="centerCrop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/pdfRl"
+            android:text="Title"
+            android:fontFamily="@font/poppins_bold"
+            android:textColor="@color/broken_white"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/authorTv"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleTv"
+            android:layout_toEndOf="@id/pdfRl"
+            android:text="Author"
+            android:textColor="@color/broken_white"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="13dp"/>
+    </RelativeLayout>
+</RelativeLayout>

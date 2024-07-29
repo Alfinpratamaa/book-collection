@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/cvMain"
+        android:background="@color/primary"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp">
+
+        <RelativeLayout
+            android:id="@+id/rlMain"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp">
+
+            <RelativeLayout
+                android:id="@+id/pdfRl"
+                android:layout_width="120dp"
+                android:layout_height="155dp"
+                android:layout_marginEnd="5dp"
+                android:background="@color/primary">
+
+                <ImageView
+                    android:id="@+id/coverImage"
+                    android:scaleType="centerCrop"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/llTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/pdfRl">
+
+                <TextView
+                    android:id="@+id/dateTv"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:maxLines="1"
+                    android:textColor="@color/gray_300"
+                    android:text="20/12/1999"
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/categoryTv"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/gray_300"
+                    android:maxLines="1"
+                    android:text="horor"
+                    android:textSize="10sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toEndOf="@+id/dateTv"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/titleTv"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/broken_white"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginTop="2dp"
+                android:text="Book Title"
+                android:textSize="15sp"
+                android:layout_below="@+id/llTop"
+                android:maxLines="1"/>
+
+            <TextView
+                android:id="@+id/authorTv"
+                style="@style/TextAppearance.MaterialComponents.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Author"
+                android:textColor="@color/broken_white"
+                android:fontFamily="@font/poppins_medium"
+                android:textSize="12sp"
+                android:layout_below="@+id/titleTv"
+                android:maxLines="1"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:id="@+id/container_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO"
+            android:src="@drawable/logo_mini" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/main_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/container_top">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="37sp"
+            android:text="Welcome Back !"
+            android:fontFamily="@font/poppins_extrabold"
+            android:textColor="@color/broken_white"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="10dp"
+            android:text="Email"
+            android:textColor="@color/broken_white"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <EditText
+            android:id="@+id/eTEmail"
+            android:layout_width="327dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_bg_input"
+            android:drawableStart="@drawable/email_gray"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            android:hint="johndoe@example.com"
+            android:inputType="textEmailAddress"
+            android:paddingStart="14dp"
+            android:textColor="@color/broken_white"
+            android:textColorHint="@color/gray_100" />
+
+        <TextView
+            android:id="@+id/passwordTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="10dp"
+            android:text="Password"
+            android:textColor="@color/broken_white"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_bold"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="327dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_bg_input"
+            android:drawableStart="@drawable/lock_gray"
+            android:drawableEnd="@drawable/eye_hide"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="16sp"
+            android:drawablePadding="10dp"
+            android:hint="*********"
+            android:inputType="textPassword"
+            android:paddingStart="14dp"
+            android:paddingEnd="12dp"
+            android:textColor="@color/broken_white"
+            android:textColorHint="@color/gray_100" />
+
+        <RelativeLayout
+            android:id="@+id/btnLogin"
+            android:layout_width="327dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_bg_btn">
+
+            <TextView
+                android:id="@+id/btnLoginText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:layout_centerInParent="true"
+                android:text="Login Now"
+                android:textColor="@color/primary" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/loadingAnimation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                app:lottie_rawRes="@raw/loading_animation"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="don't have an account ?"
+                android:textColor="@color/broken_white"/>
+
+            <TextView
+                android:id="@+id/navToRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Register"
+                android:textColor="@color/secondary_200"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/poppins_bold"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
